@@ -1,0 +1,18 @@
+início {
+    real: v1;
+    real: v2;
+    
+    v1 = 7;
+    v2 = 200;
+    
+    real: taxa;
+    taxa = crescimento(v1, v2);
+    escreva("A taxa é de " + taxa + "%");
+}
+
+função crescimento(real: inicio, real: fim) -> real {
+    real: taxa;
+    
+    taxa = (fim - inicio) / inicio;
+    retorne taxa * 100;
+}

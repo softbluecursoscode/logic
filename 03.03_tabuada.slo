@@ -1,0 +1,17 @@
+início {
+    inteiro: t;
+    leia("Tabuada do...", t);
+    
+    inteiro: n;
+    
+    para n de 1 até 10 passo 1 {
+       // t = 2, n = 1 => 2 x 1 = 2 => t x n = (txn)
+       escreva(t + " x " + n + " = " + (t * n));
+    }
+    
+    /*n = 1;
+    enquanto(n <= 10) {
+        escreva(t + " x " + n + " = " + (t * n));
+        n = n + 1;
+    }*/
+}
