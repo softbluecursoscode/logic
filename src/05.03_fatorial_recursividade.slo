@@ -1,0 +1,10 @@
+início {
+    escreva(fat(4));
+}
+
+função fat(inteiro: n) -> inteiro {
+    se (n == 0) {
+        retorne 1;
+    }
+    retorne n * fat(n - 1);
+}

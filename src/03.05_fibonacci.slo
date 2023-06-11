@@ -1,0 +1,33 @@
+início {
+    // 0 1 1 2 3 5 8 13 19...
+    
+    inteiro: n;
+    inteiro: i;
+    inteiro: j;
+    inteiro: p;
+    inteiro: t;
+    
+    i = 1;
+    j = 0;
+    
+    escreva (j);
+    escreva (i);
+    
+    para n de 3 até 10 passo 1 {
+        p = i + j;
+        escreva(p);
+        t = i;
+        i = p;
+        j = t;
+    }
+    
+    /* Alternativa ao algoritmo anterior...
+    i = 0;
+    j = 1;
+    
+    para n de 1 até 10 passo 1 {
+        escreva(i);
+        i = i + j;
+        j = i - j;
+    }*/
+}

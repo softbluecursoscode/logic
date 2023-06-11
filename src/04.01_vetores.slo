@@ -1,0 +1,29 @@
+início {
+    inteiro: valores[5];
+   
+    valores[0] = 0;
+    valores[1] = 2;
+    valores[2] = 7;
+    valores[3] = 9;
+    valores[4] = 0;
+    
+    inteiro: i;
+    inteiro: j;
+    inteiro: temp;
+    
+    i = 0;
+    enquanto (i < 4) {
+        j = i + 1;
+        enquanto (j < 5) {
+            se (valores[i] > valores[j]) {
+                temp = valores[j];
+                valores[j] = valores[i];
+                valores[i] = temp;
+            }
+            j = j + 1;
+        }
+        i = i + 1;
+    }
+    
+    escreva(valores);
+}

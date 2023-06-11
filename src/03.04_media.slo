@@ -1,0 +1,21 @@
+início {
+    real: nota;
+    real: media;
+    real: soma;
+    inteiro: n;
+    
+    n = 1;
+    soma = 0;
+    
+    enquanto(nota >= 0) {
+        leia("Nota " + n, nota);
+        
+        se (nota >= 0) {
+            soma = soma + nota;
+            n = n + 1;
+        }
+    }
+    
+    media = soma / (n - 1);
+    escreva("A média é " + media);
+}
